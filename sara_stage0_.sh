@@ -21,6 +21,7 @@ ls -lh sara/ biocomputing/ #used to list all the files in the two folders
 
 #project 2
 
+conda init #used to update file
 conda activate #used to activate conda
 conda create -n funtools python=3.10 #used to create a new environment named funtools with python 3.10
 conda activate funtools #used to activate the funtools environment
