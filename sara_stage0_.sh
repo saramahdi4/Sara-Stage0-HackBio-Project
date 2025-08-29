@@ -10,7 +10,7 @@ mv wildtype.fna sara/ #moved wildtype.fna to sara folder
 rm wildtype.gbk.1 #removed wildtype.gbk.1
 grep 'tatatata' wildtype.fna # 'tatatata' sequence appeared multiple times, which indicates the mutant type
 grep 'tatatata' wildtype.fna > newfile.txt #printed all matching lines containing 'tatata' to newfile.txt
-wc -l wildtype.gbk #prints the total number of lines.
+tail -n +2 wildtype.gbk | wc -l #prints number of lines excluding the header 
 head wildtype.gbk #prints the first few lines, which show the 'LOCUS' tag, showing that the sequence contains 197394 bp
 #the first lines also show the source of the organism which is Staphylococcus aureus
 grep 'gene=' wildtype.gbk #prints all the gene names in the .gbk file
