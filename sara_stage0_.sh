@@ -26,7 +26,7 @@ conda activate #used to activate conda
 conda create -n funtools python=3.10 #used to create a new environment named funtools with python 3.10
 conda activate funtools #used to activate the funtools environment
 sudo apt-get update #do this before installing figlet
-sudo apt-get install figlet #figlet installed using aspt-get
+sudo apt-get install figlet #figlet installed using apt-get
 figlet 'sara' #prints my name using figlet
 conda install bwa blast samtools bedtools spades bcftools fastp multiqc
 
