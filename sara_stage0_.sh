@@ -7,7 +7,7 @@ mkdir sara #created a folder named sara
 mkdir biocomputing && cd biocomputing #created a folder named biocomputing and moved into it
 wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk      #downloaded all 3 files in 1 command
 mv wildtype.fna sara/ #moved wildtype.fna to sara folder
-rm wildtype.gbk #removed wildtype.gbk
+rm wildtype.gbk.1 #removed wildtype.gbk.1
 grep 'tatatata' wildtype.fna # 'tatatata' sequence appeared multiple times, which indicates the mutant type
 grep 'tatatata' wildtype.fna > newfile.txt #printed all matching lines containing 'tatata' to newfile.txt
 wc -l wildtype.gbk #prints the total number of lines.
